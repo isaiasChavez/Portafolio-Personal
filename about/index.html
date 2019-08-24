@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>About | Isaías Chávez</title>
+    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
 
@@ -15,18 +16,18 @@
 <div class="wrapper">
         <nav class="nav-menu">
                 <ul>
-                    <li>About</li>
-                    <li>CV</li>
-                    <li>UX</li>
-                    <li>Blog</li>
+                        <a href="./index.html"><li>About</li></a>   
+                        <a href="../blog/index.html"><li>Blog</li></a>
+                        <a href="../cv/index.html"><li>CV</li></a>
+                        <a href="../web/index.html/"><li>Web Developer</li></a>    
         
                 </ul>
             </nav>
     <header class="header">
         <div>
             <a href="../index.html">
-                <div class="brand">
-                    <h1>Isaías Chávez Martínez</h1> <img class="brand-img" src="imagen.jpg" width="50px" height="50px" alt="">
+                <div class="brand ">
+                    <h1>Isaías Chávez Martínez</h1> <img class="brand-img" src="../imagen.jpg" width="50px" height="50px" alt="">
                 </div>
             </a>
                 <p>Web developer</p>
@@ -43,29 +44,57 @@
     
             <div class="about">
 
-                <div class="about-image">
-                    <img src="imagen.jpg" alt="Isaías Chávez" class="about-img">
-                </div>
+                
                 <div class="about-text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quod, corporis quibusdam voluptatem accusantium iure fugit porro nesciunt deleniti nostrum molestias vel laboriosam cum rerum? Quasi, perspiciatis odit. Ratione, voluptas.</p>
                 </div>
+                <div class="about-image">
+                        <img src="../imagen.jpg" alt="Isaías Chávez" class="about-img">
+                    </div>
+            </div>
+
+            <div class="contact">
+            <form action="" class="formulario">
+
+                
+                    <h2>Contact me</h2>
+                    <label for="name">Name
+                        <input type="text" name="name" id="form-name" required  >
+                    </label>
+                    <label for="name">Email
+                            <input type="email" name="name" id="form-name" required>
+                    </label>
+                    <label for="menssage"> Your message
+                        <textarea name="message" id="form-message" cols="30" rows="10" ></textarea>
+                    </label>
+                    <input type="submit" value="Send" id="form-contact-button">
+
+                
+            </form>
             </div>
         
     </main>
     <footer class="footer">
          <div class="social">
-             <i class=" fab fa-2x fa-facebook-square"></i>
-             <i class="fab fa-2x fa-whatsapp-square"></i>
-             <i class="fab fa-2x fa-github"></i>
-             <i class="fab fa-2x fa-instagram"></i>
-             <i class="fab fa-2x fa-linkedin"></i>
+                <a href="https://www.facebook.com/profile.php?id=100002466696106" target="_blank">
+                    <i class=" fab fa-2x fa-facebook-square scrollReveal"></i>
+                </a>
+                 
+                 <i class="fab fa-2x fa-whatsapp-square scrollReveal"></i>
+                 <i class="fab fa-2x fa-github scrollReveal"></i>
+                 <a href="https://www.instagram.com/isaiaschavezm">
+                    <i class="fab fa-2x fa-instagram scrollReveal"></i>
+                </a>
+                 <i class="fab fa-2x fa-linkedin scrollReveal"></i>
+             </div>
          </div>
     </footer>
 
 
     
 </div>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://kit.fontawesome.com/cc00e9ef87.js"></script>
-<script src="script.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
