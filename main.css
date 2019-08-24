@@ -27,7 +27,7 @@ grid-template-areas: "nav"
                       "footer";
      
 margin: 0 2%;
-
+    min-height: 100vh;
 }
 
 .header{
@@ -102,6 +102,9 @@ margin: 0 2%;
 }
 
 @media screen and (min-width: 728px){
+    body{
+        background: linear-gradient(0.25turn, #f1f7e6, #fff)
+    }
     #burguer-button{
         display: none;
       }
