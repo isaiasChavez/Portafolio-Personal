@@ -4,6 +4,12 @@ body{
     font-family: Montserrat; 
 }
 
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .wrapper{
     display: grid;
     grid-template-columns:  1fr;
