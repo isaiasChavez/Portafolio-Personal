@@ -3,13 +3,15 @@ body{
     padding: 0;
     font-family: Montserrat; 
 }
-
-
 a{
     text-decoration: none;
     color: black;
     cursor: pointer;
 }
+h1,h2,h3,h4,p,span{
+    cursor: default;
+}
+
 
 
 .wrapper{
@@ -42,6 +44,9 @@ margin: 0 2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.brand h1{
+    cursor: pointer;
 }
 .brand-img{
     border-radius: 6px;
