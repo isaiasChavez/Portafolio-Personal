@@ -59,12 +59,7 @@
     font-size: 1.2em;
     width: 40%;
 }
-#form-contact-button:hover{
-    transition: 0.5s;
-    background: rgb(63, 54, 54);
-    color: white;
 
-}
 
 @media screen and (min-width: 728px){
     

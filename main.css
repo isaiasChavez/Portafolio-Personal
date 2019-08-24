@@ -16,6 +16,13 @@ h1,h2,h3,h4,p,span{
     font-weight: bold;
     font-size: 1em;
 }
+.button-1{
+    padding: 1%;
+    margin-top: 2%;
+    background: none;
+    border: solid 1px;
+    cursor: pointer;
+}
 
 
 .wrapper{
@@ -112,6 +119,11 @@ margin: 0 2%;
 .active{
     background: rgb(255, 255, 255);
 }
+.button-effect:hover{
+    transition: 0.5s;
+    background: rgb(63, 54, 54);
+    color: white; 
+}
 @media screen and (min-width: 728px){
     
     body{
@@ -166,7 +178,7 @@ margin: 0 2%;
 }
 @keyframes pushup{
     0%{
-      transform: scale(0.99);
+      transform: scale(0.9);
       
     }
     
