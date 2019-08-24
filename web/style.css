@@ -1,0 +1,50 @@
+.hero{
+    border-bottom: solid 1px;
+}
+.main{
+    grid-area: main;
+}
+
+.web-proyect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.web-proyect-button{
+    width: 40%;
+    padding: 3%;
+    background: none;
+    border: solid 1px;
+    border-radius: 6px;
+    margin: 5%;
+    font-size: 1.2em;
+}
+.web-proyect-button:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgb(63, 54, 54);
+    color: white;
+}
+.web-proyect-img{
+    max-height: 200px;
+    max-width: 200px;
+}
+
+
+@media screen and (min-width: 728px){
+  
+    .web-proyects{
+        display: flex;
+        justify-content: space-around;
+    }
+    .hero h2{
+        font-size: 1em;
+    }
+    .web{
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
+
+
+}
