@@ -7,5 +7,3 @@ barmenu.classList.toggle("mostrarMenu")
 })
 
 ScrollReveal().reveal('.scrollReveal',{delay:400});
-
-console.log("isaias")
