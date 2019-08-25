@@ -29,13 +29,13 @@
 }
 .formulario input,textarea{
     border-radius: 2px;
-    border: solid 1px #696969;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-
+    border: solid 1px #69696975;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
     border-width: 1px;
-    height: 1.5em;
+    height: 2em;
 }
 .formulario textarea{
     height: 6em;
@@ -58,6 +58,28 @@
     width: 40%;
 }
 
+.mensajesDeConfirmacion{
+    margin:3em;
+}
+.mensajeExito{
+    border-radius: 6px;
+    background: rgba(17, 71, 170, 0.856);
+    text-align: center;
+    padding: 1%;
+    margin: 3% auto ;
+    width: 50%;
+    color:white;
+    
+}
+.mensajeError{
+    border-radius: 6px;
+    color:rgba(80, 79, 79, 0.884);
+    width: 50%;
+    margin: 3% auto ;
+    padding: 1%;
+    background: rgba(161, 164, 168, 0.164);
+    text-align: center;
+}
 .d-none{
     display: none;
     
@@ -83,15 +105,17 @@
     
     .contact{
         display: flex;
+        flex-direction: column;
         padding: 8% 0;
         margin: 10% 0;
         justify-content: flex-end;
+
     }
     .formulario{
         width: 80%;
         margin: auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
     .formulario h2{
         font-size: 1.5em;
@@ -111,15 +135,19 @@
     
     .formulario input{
         width: 80%;
-        height: 1.8em;
-        padding: 0.2em;
+        height: 2.3em;
+        padding: 0.3em;
+        border-color: #696969a6;
+        border-radius: 6px;
         box-sizing: border-box;
         background: none;
         margin-top: 1em;
+        font-size: 1em;
     }
     .formulario textarea{
-        width: 90%;
-
+        border-radius: 6px;
+        width: 80%;
+        border-color: #696969a6;
     }
     
 }

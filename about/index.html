@@ -13,99 +13,114 @@
 
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-        
-<div class="wrapper">
+
+    <div class="wrapper">
         <nav class="nav-menu">
-                <ul>
-                        <a href="./index.html"><li class="active">About</li></a>   
-                        <a href="../blog/index.html"><li>Blog</li></a>
-                        <a href="../cv/index.html"><li>CV</li></a>
-                        <a href="../web/index.html"><li>Web Developer</li></a>    
-        
-                </ul>
-            </nav>
-    <header class="header">
-        <div>
-            <a href="../index.html">
-                <div class="brand ">
-                    <h1>Isaías Chávez Martínez</h1> <img class="brand-img" src="../imagen.jpg" width="50px" height="50px" alt="">
-                </div>
-            </a>
+            <ul>
+                <a href="./index.html">
+                    <li class="active">About</li>
+                </a>
+                <a href="../blog/index.html">
+                    <li>Blog</li>
+                </a>
+                <a href="../cv/index.html">
+                    <li>CV</li>
+                </a>
+                <a href="../web/index.html">
+                    <li>Web Developer</li>
+                </a>
+
+            </ul>
+        </nav>
+        <header class="header">
+            <div>
+                <a href="../index.html">
+                    <div class="brand ">
+                        <h1>Isaías Chávez Martínez</h1> <img class="brand-img" src="../imagen.jpg" width="50px"
+                            height="50px" alt="">
+                    </div>
+                </a>
                 <p>Web developer</p>
+            </div>
+            <i id="burguer-button" class="fas fa-bars burguer-menu fa-2x"></i>
+
+        </header>
+        <div class="hero">
+            <h2>Web Developer fullstack JS HTML JS PHP SQL and React Js developer
+
+            </h2>
         </div>
-        <i  id="burguer-button" class="fas fa-bars burguer-menu fa-2x"></i>
-        
-    </header>
-    <div class="hero">
-        <h2>Web Developer fullstack JS HTML JS PHP SQL and React Js developer
-    
-        </h2>
-    </div>
-    <main class="main">
-    
+        <main class="main">
+
             <div class="about">
 
-                
+
                 <div class="about-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quod, corporis quibusdam voluptatem accusantium iure fugit porro nesciunt deleniti nostrum molestias vel laboriosam cum rerum? Quasi, perspiciatis odit. Ratione, voluptas.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quod, corporis quibusdam
+                        voluptatem accusantium iure fugit porro nesciunt deleniti nostrum molestias vel laboriosam cum
+                        rerum? Quasi, perspiciatis odit. Ratione, voluptas.</p>
                 </div>
                 <div class="about-image">
-                        <img src="../imagen.jpg" alt="Isaías Chávez" class="about-img">
-                    </div>
+                    <img src="../imagen.jpg" alt="Isaías Chávez" class="about-img">
+                </div>
             </div>
 
             <div class="contact">
-            <div id="mensajeExito" class="d-noe mensajeExito"> Mensaje enviado correctamente.</div>
-            <div id="mensajeError" class="d-nne lala">A ocurrido un error.</div>
-            <form action="" class="formulario" id="formulario">
+                <!-- Mensajes de confirmación -->
+               
+                <form action="" class="formulario" id="formulario">
                     <h2>Contact me</h2>
                     <label for="name">Name
-                        <input type="text" name="nombre" id="form-name" required  >
+                        <input type="text" name="nombre" id="form-name" required>
                     </label>
                     <label for="name">Email
-                            <input type="email" name="email" id="form-name" required>
+                        <input type="email" name="email" id="form-name" required>
                     </label>
                     <label for="menssage"> Your message
-                        <textarea name="mensaje" id="form-message" cols="30" rows="10" ></textarea>
+                        <textarea name="mensaje" id="form-message" cols="30" rows="10"></textarea>
                     </label>
                     <input type="submit" value="Send" id="form-contact-button" class="button-effect">
 
-                
-            </form>
+
+                </form>
+                <div class="mensajesDeConfirmacion">
+                    <div id="mensajeExito" class="d-none mensajeExito"> Mensaje enviado correctamente.</div>
+                    <div id="mensajeError" class="d-none mensajeError">A ocurrido un error.</div>
+                </div>
             </div>
-        
-    </main>
-    <footer class="footer">
-         <div class="social">
+
+        </main>
+        <footer class="footer">
+            <div class="social">
                 <a href="https://www.facebook.com/profile.php?id=100002466696106" target="_blank">
                     <i class=" fab fa-2x fa-facebook-square scrollReveal"></i>
                 </a>
-                 
-                 <i class="fab fa-2x fa-whatsapp-square scrollReveal"></i>
-                 <i class="fab fa-2x fa-github scrollReveal"></i>
-                 <a href="https://www.instagram.com/isaiaschavezm">
+
+                <i class="fab fa-2x fa-whatsapp-square scrollReveal"></i>
+                <i class="fab fa-2x fa-github scrollReveal"></i>
+                <a href="https://www.instagram.com/isaiaschavezm">
                     <i class="fab fa-2x fa-instagram scrollReveal"></i>
                 </a>
-                 <i class="fab fa-2x fa-linkedin scrollReveal"></i>
-             </div>
-         </div>
+                <i class="fab fa-2x fa-linkedin scrollReveal"></i>
+            </div>
+    </div>
     </footer>
 
 
-    
-</div>
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script src="formulario.js"></script>
 
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://kit.fontawesome.com/cc00e9ef87.js"></script>
-<script src="../script.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="formulario.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/cc00e9ef87.js"></script>
+    <script src="../script.js"></script>
 </body>
+
 </html>
