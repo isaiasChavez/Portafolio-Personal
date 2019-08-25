@@ -8,13 +8,18 @@
 .proyect{
     border-radius: 20px;
     display: flex;
-    width: 100%;
+    width: 95%;
     height: 300px;
     text-align: center;
     font-size: 1em;
     height: auto;
         flex-direction: column;
     transition: 0.5s;
+    background: #fffefe;
+    border-top: 1px solid; 
+    border-left: 1px solid; 
+    box-shadow: 4px 6px 5px 4px #00000066;
+    margin-top: 50px;
 }
 
 .proyect:hover{
