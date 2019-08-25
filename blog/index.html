@@ -9,7 +9,33 @@
     <link rel="stylesheet" href="../main.css">
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
-
+    <style>
+    
+    .main{
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .button-1{
+        padding: 1%;
+        margin-top: 2%;
+        background: none;
+        border: solid 1px;
+        cursor: pointer;
+    }
+    .nopage-button:active{
+        animation-name: pushup;
+   animation-duration: 1s;
+    }
+    .nopage-button:hover a{
+        color:white;
+    }
+    #button-goback:hover a{
+        color: white;
+    }
+    </style>
 
 </head>
 <body>
@@ -18,9 +44,9 @@
         <nav class="nav-menu">
                 <ul>
                     <a href="../about/index.html"><li>About</li></a>   
-                    <a href="./index.html"><li>Blog</li></a>
+                    <a href="./index.html"><li class="active">Blog</li></a>
                     <a href="../cv/index.html"><li>CV</li></a>
-                    <a href="../web/index.html/"><li>Web Developer</li></a>
+                    <a href="../web/index.html"><li>Web Developer</li></a>
         
                 </ul>
             </nav>
@@ -36,13 +62,18 @@
         <i  id="burguer-button" class="fas fa-bars burguer-menu fa-2x"></i>
         
     </header>
-    <div class="hero">
-        <h2>Web Developer fullstack JS HTML JS PHP SQL and React Js developer
     
-        </h2>
-    </div>
     <main class="main">
-     
+                <p>
+                        Sorry, this page is still in development</p>
+                <i class="fas fa-bug fa-2x"></i>
+                <button class="button-1 button-effect" id="button-goback">
+                        <a href="../index.html">
+                            <div>
+                                Go back
+                            </div>
+                         </a> 
+                    </button>
         </main>
     <footer class="footer">
          <div class="social">

@@ -48,23 +48,16 @@
 }
 #form-contact-button{
     margin: auto;
-    background:none;
     border: solid 1px grey;
     height: 40px;
     border-radius: 10px;
     cursor: pointer;
-    color:black;
     font-weight: lighter;
     transition: 0.5s;
     font-size: 1.2em;
     width: 40%;
 }
-#form-contact-button:hover{
-    transition: 0.5s;
-    background: rgb(63, 54, 54);
-    color: white;
 
-}
 
 @media screen and (min-width: 728px){
     
