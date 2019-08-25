@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#364d73" />
+
+    <meta name="theme-color" content="#083756" />
     <title>About | Isaías Chávez</title>
+    <link rel="icon" href="../iconito.ico">
+
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
@@ -54,18 +59,18 @@
             </div>
 
             <div class="contact">
-            <form action="" class="formulario">
-
-                
+            <div id="mensajeExito" class="d-noe mensajeExito"> Mensaje enviado correctamente.</div>
+            <div id="mensajeError" class="d-nne lala">A ocurrido un error.</div>
+            <form action="" class="formulario" id="formulario">
                     <h2>Contact me</h2>
                     <label for="name">Name
-                        <input type="text" name="name" id="form-name" required  >
+                        <input type="text" name="nombre" id="form-name" required  >
                     </label>
                     <label for="name">Email
-                            <input type="email" name="name" id="form-name" required>
+                            <input type="email" name="email" id="form-name" required>
                     </label>
                     <label for="menssage"> Your message
-                        <textarea name="message" id="form-message" cols="30" rows="10" ></textarea>
+                        <textarea name="mensaje" id="form-message" cols="30" rows="10" ></textarea>
                     </label>
                     <input type="submit" value="Send" id="form-contact-button" class="button-effect">
 
@@ -93,6 +98,12 @@
 
     
 </div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="formulario.js"></script>
+
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://kit.fontawesome.com/cc00e9ef87.js"></script>
 <script src="../script.js"></script>
