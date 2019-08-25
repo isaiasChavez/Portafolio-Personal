@@ -19,13 +19,9 @@
     border-radius: 6px;
     margin: 5%;
     font-size: 1.2em;
-}
-.web-proyect-button:hover{
     cursor: pointer;
-    transition: 0.5s;
-    background: rgb(63, 54, 54);
-    color: white;
 }
+
 .web-proyect-img{
     max-height: 200px;
     max-width: 200px;

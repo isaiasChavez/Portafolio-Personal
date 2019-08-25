@@ -48,12 +48,10 @@
 }
 #form-contact-button{
     margin: auto;
-    background:none;
     border: solid 1px grey;
     height: 40px;
     border-radius: 10px;
     cursor: pointer;
-    color:black;
     font-weight: lighter;
     transition: 0.5s;
     font-size: 1.2em;

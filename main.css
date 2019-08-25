@@ -119,6 +119,7 @@ margin: 0 2%;
 .active{
     background: rgb(255, 255, 255);
 }
+
 .button-effect:hover{
     transition: 0.5s;
     background: rgb(63, 54, 54);
