@@ -49,13 +49,16 @@ $cuerpo .= "\n";
 $cuerpo .= $mensaje;
 $cuerpo .= "\n";
 
-$enviarA = 'isaias.ch4vez@gmail.com';
-$asunto = 'Nuevo mensaje de mi sitio web.';
+$correoPersonal = 'isaias.ch4vez@gmail.com';
+$correoDelSitio = 'isaiaschavez@icmdeveloper.com';
+$asunto = 'Mensaje del sitio web.';
 
 
 if ($error == '') {
 
-    $success = mail($enviarA,$asunto,$cuerpo,'de: '.$email);
+    $success = mail($correoPersonal,$asunto,$cuerpo,'de: '.$email);
+    $successSitio = mail($correoDelSitio,$asunto,$cuerpo,'de: '.$email);
+
     echo "exito";
 }else{
     echo $error;
