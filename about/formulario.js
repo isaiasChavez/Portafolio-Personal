@@ -1,32 +1,32 @@
-$("#formulario").submit( function(event){
-    event.preventDefault()
-    enviar()
-    console.log("Todo bien")
-})
-function enviar(){
 
-    let datos = $("#formulario").serialize() //Toma todos los campos que haya ingresado el usuario y los convierte en un arreglo
-        $.ajax({
-            type:"post",
-            url:"formulario.php",
-            data: datos,
-            success: function(texto){
-                if (texto == "exito") {
-                        correcto()
-                }else{
-                    phpError(texto)
-                }
+
+const $Formulario = document.getElementById("formulario")
+const dataForm = new FormData($Formulario)
+
+const procesarFormulario = function(e){
+    e.preventDefault()
+    const config = {
+        method: "POST",
+        body:dataForm
+    }
+    fetch("formulario.php",config)
+        .then( response => {
+            if (response.ok) {
+                return response.text()
+            }
+            else{
+                throw "Error";
             }
         })
-}
+        .then(data => {
+            console.log(data)
+        })
+        .catch( error =>{
+            console.log(error)
+        })
 
-function correcto() {
-    $("#mensajeExito").removeClass("d-none")
-    $("#mensajeError").addClass("d-none")
-    console.log("Esxxx")
-}
-function phpError(error) {
-    $("#mensajeError").removeClass("d-none")
-    $("#mensajeError").html(error)
 
 }
+
+
+$Formulario.addEventListener('submit', procesarFormulario)
