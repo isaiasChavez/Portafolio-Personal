@@ -81,8 +81,6 @@
 
                         </div>
                         <div class="post-footer">
-                                <button class="post-button" id="post-button" data-target="post-1">Read More</button>
-                            
                             <div class="post-labels">
 
                                 <div class="post-label">Libros</div>
