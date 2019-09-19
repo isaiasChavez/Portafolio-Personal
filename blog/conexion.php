@@ -1,10 +1,10 @@
 <?php
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=prueba', $usuario, $contraseña);
-    foreach($mbd->query('SELECT * from FOO') as $fila) {
-        print_r($fila);
-    }
-    $mbd = null;
+    $usuario = 'root';
+    $contraseña = '';
+
+    $pdo = new PDO('mysql:host=localhost;dbname=blog', $usuario, $contraseña);
+
 } catch (PDOException $e) {
     print "¡Error!: " . $e->getMessage() . "<br/>";
     die();
